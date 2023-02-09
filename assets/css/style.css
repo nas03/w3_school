@@ -60,6 +60,7 @@ html {
   left: 0px;
   right: 0px;
   z-index: 1;
+  overflow: hidden;
 }
 #nav {
   display: inline-block;
@@ -114,17 +115,26 @@ html {
 #nav .nav-arrow-down {
   font-size: 11px;
 }
-
+#header .menu-icon,
 #header .search-icon {
   color: #fff;
   font-size: 16px;
   float: right;
   line-height: 46px;
 }
+#header .mobile-menu-btn,
 #header .search-btn {
   float: right;
   padding: 0 21px;
 }
+#header .mobile-menu-btn:hover{
+  background-color: #ccc;
+}
+#header .mobile-menu-btn:hover .menu-icon{
+  color: #000;
+}
+
+
 #header .search-btn:hover {
   background-color: #f44336;
   cursor: pointer;
@@ -146,19 +156,20 @@ html {
 }
 #slider .text-heading {
   font-weight: 500;
-
   font-size: 24px;
 }
 #slider .text-description {
   font-size: 15px;
   margin-top: 25px;
 }
-#content {
-}
+
 #content .content-section {
+  max-width: 100%;
   width: 800px;
-  margin: auto auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 64px 0px 112px;
+  padding-right: 16px;
 }
 
 #content .section-heading {
@@ -291,8 +302,8 @@ html {
   padding: 11px 16px;
   float: right;
 }
-.map-secion img {
-  width: 100%;
+.map-section img {
+  width: 100% ;
 }
 #footer {
   padding: 64px 16px;
